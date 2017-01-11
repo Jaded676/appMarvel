@@ -1,0 +1,19 @@
+<ion-view view-title="Categorias">
+  <div ng-show="cargando"> <H3>CARGANDO</H3> </div>
+  <ion-content id="grid-template" grid-animations-basis>
+    <div id="theGrid" class="main" back-to-grid>
+      <section class="grid">
+         <a ng-click="goToComic(article.id)" grid-item class="grid__item" ng-repeat="article in articles" style="background-image: url('{{article.images[0].path}}.{{article.images[0].extension}}'); background-size:cover;">
+              <span style="z-index:2;"class="title title--preview">{{article.title}}</span>
+              <div class="loader"></div>
+              <span class="category">{{article.category}}</span>
+              <div class="meta meta--preview">
+                <!--<img class="meta__avatar" ng-src="{{article.author}}" alt="author04" /> -->
+                <span class="meta__date"><i class="ion-social-usd"></i>{{article.prices[0].price}}</span>
+                <!--<span class="meta__reading-time"><i class="icon ion-chatbubble-working"></i>{{article.pageCount}}</span>-->
+              </div>
+        </a>
+      </section>
+    </div>
+  </ion-content>
+</ion-view>
