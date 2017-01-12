@@ -9834,6 +9834,10 @@ span.title.title--preview.ng-binding {
   .meta--full .meta__avatar {
     margin: 1em auto; }
 
+  img.meta__avatar {
+    width: 100%;
+  }
+
 .category--full,
 .title--full,
 .meta--full .meta__avatar,
@@ -9983,7 +9987,7 @@ span.title.title--preview.ng-binding {
     left: 40% !important;
     } }
 
-@media screen and (max-width: 299px) {
+@media screen and (max-width: 300px) {
   .bar.bar-stable .title {
     color: #000;
     font-weight: bold;
