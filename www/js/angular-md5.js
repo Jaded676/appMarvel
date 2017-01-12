@@ -1,9 +1,5 @@
-/*
-  angular-md5 - v0.1.8 
-  2015-11-17
-*/
+/* angular-md5 - v0.1.8 */
 
-/* commonjs package manager support (eg componentjs) */
 if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports) {
   module.exports = "angular-md5";
 }

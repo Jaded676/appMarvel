@@ -1,31 +1,4 @@
 @charset "UTF-8";
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
-
-For example, you might change some of the default colors:
-
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
-*/
-/*!
-  Ionicons, v2.0.1
-  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
-  https://twitter.com/benjsperry  https://twitter.com/ionicframework
-  MIT License: https://github.com/driftyco/ionicons
-
-  Android-style icons originally built by Google’s
-  Material Design Icons: https://github.com/google/material-design-icons
-  used under CC BY http://creativecommons.org/licenses/by/4.0/
-  Modified icons to fit ionicon’s grid from original.
-*/
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC:400italic,700,900|Raleway:500|Martel+Sans:400,700);
 @font-face {
   font-family: "Ionicons";
@@ -2979,19 +2952,8 @@ $dark:                            #444 !default;
 .ion-xbox:before {
   content: ""; }
 
-/**
- * Resets
- * --------------------------------------------------
- * Adapted from normalize.css and some reset.css. We don't care even one
- * bit about old IE, so we don't need any hacks for that in here.
- *
- * There are probably other things we could remove here, as well.
- *
- * normalize.css v2.1.2 | MIT License | git.io/normalize
+/* Resets */
 
- * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
- * http://cssreset.com
- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -3023,17 +2985,10 @@ q:before, q:after {
   content: '';
   content: none; }
 
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/**
- * Hide the `template` element in IE, Safari, and Firefox < 22.
- */
 [hidden],
 template {
   display: none; }
@@ -3041,37 +2996,26 @@ template {
 script {
   display: none !important; }
 
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *  user zoom.
- */
+/* Base */
+
 html {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   font-family: sans-serif;
-  /* 1 */
+
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
 
-/**
- * Remove default margin.
- */
+  -webkit-text-size-adjust: 100%;
+  }
+
+
 body {
   margin: 0;
   line-height: 1; }
 
-/**
- * Remove default outlines.
- */
 a,
 button,
 :focus,
@@ -3081,9 +3025,6 @@ a:active,
 a:hover {
   outline: 0; }
 
-/* *
- * Remove tap highlight color
- */
 a {
   -webkit-user-drag: none;
   -webkit-tap-highlight-color: transparent;
@@ -3091,33 +3032,20 @@ a {
   a[href]:hover {
     cursor: pointer; }
 
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
+/* Typography */
+
 b,
 strong {
   font-weight: bold; }
 
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
 dfn {
   font-style: italic; }
 
-/**
- * Address differences between Firefox and other browsers.
- */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
 code,
 kbd,
 pre,
@@ -3125,27 +3053,15 @@ samp {
   font-size: 1em;
   font-family: monospace, serif; }
 
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
 pre {
   white-space: pre-wrap; }
 
-/**
- * Set consistent quote types.
- */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
-/**
- * Address inconsistent and variable font size in all browsers.
- */
 small {
   font-size: 80%; }
 
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
 sub,
 sup {
   position: relative;
@@ -3159,127 +3075,74 @@ sup {
 sub {
   bottom: -0.25em; }
 
-/**
- * Define consistent border, margin, and padding.
- */
 fieldset {
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
   border: 1px solid #c0c0c0; }
 
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
 legend {
   padding: 0;
-  /* 2 */
-  border: 0;
-  /* 1 */ }
 
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- * 4. Remove any default :focus styles
- * 5. Make sure webkit font smoothing is being inherited
- * 6. Remove default gradient in Android Firefox / FirefoxOS
- */
+  border: 0;
+  }
+
 button,
 input,
 select,
 textarea {
   margin: 0;
-  /* 3 */
   font-size: 100%;
-  /* 2 */
   font-family: inherit;
-  /* 1 */
   outline-offset: 0;
-  /* 4 */
   outline-style: none;
-  /* 4 */
   outline-width: 0;
-  /* 4 */
   -webkit-font-smoothing: inherit;
-  /* 5 */
   background-image: none;
-  /* 6 */ }
+  }
 
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `importnt` in
- * the UA stylesheet.
- */
 button,
 input {
   line-height: normal; }
 
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
 button,
 select {
   text-transform: none; }
 
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *  and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *  `input` and others.
- */
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
-  /* 3 */
-  -webkit-appearance: button;
-  /* 2 */ }
 
-/**
- * Re-set default cursor for disabled elements.
- */
+  -webkit-appearance: button;
+  }
+
+
 button[disabled],
 html input[disabled] {
   cursor: default; }
 
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *  (include `-moz` to future-proof).
- */
+
 input[type="search"] {
   -webkit-box-sizing: content-box;
-  /* 2 */
+
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   -webkit-appearance: textfield;
-  /* 1 */ }
+  }
 
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
+
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/**
- * Remove inner padding and border in Firefox 4+.
- */
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
+
 textarea {
   overflow: auto;
   /* 1 */
@@ -3289,20 +3152,13 @@ textarea {
 img {
   -webkit-user-drag: none; }
 
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
+/* Tables */
+
 table {
   border-spacing: 0;
   border-collapse: collapse; }
 
-/**
- * Scaffolding
- * --------------------------------------------------
- */
+
 *,
 *:before,
 *:after {
@@ -3387,10 +3243,7 @@ body.grade-c {
     overflow-x: scroll;
     overflow-y: scroll; }
 
-/**
- * Scroll is the scroll view component available for complex and custom
- * scroll view functionality.
- */
+
 .scroll {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3403,10 +3256,7 @@ body.grade-c {
   -webkit-transform-origin: left top;
   transform-origin: left top; }
 
-/**
- * Set ms-viewport to prevent MS "page squish" and allow fluid scrolling
- * https://msdn.microsoft.com/en-us/library/ie/hh869615(v=vs.85).aspx
- */
+
 @-ms-viewport {
   width: device-width; }
 
@@ -3508,9 +3358,9 @@ ion-infinite-scroll {
   .overflow-scroll.keyboard-up:not(.keyboard-up-confirm) {
     overflow: hidden; }
 
-/* If you change these, change platform.scss as well */
+
 .has-header {
-  top: 44px; }
+  top: 89px; }
 
 .no-header {
   top: 0; }
@@ -3572,10 +3422,6 @@ ion-infinite-scroll {
   width: 100%;
   height: 100%; }
 
-/**
- * Typography
- * --------------------------------------------------
- */
 p {
   margin: 0 0 10px; }
 
@@ -3721,10 +3567,7 @@ a.subdued {
   a.subdued:last-child {
     padding-right: 0; }
 
-/**
- * Action Sheets
- * --------------------------------------------------
- */
+
 .action-sheet-backdrop {
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
@@ -3862,10 +3705,7 @@ a.subdued {
   .backdrop.active {
     opacity: 1; }
 
-/**
- * Bar (Headers and Footers)
- * --------------------------------------------------
- */
+
 .bar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3891,11 +3731,10 @@ a.subdued {
   height: 44px;
   border-width: 0;
   border-style: solid;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid #ddd;
+  /*border-top: 1px solid transparent;
+  border-bottom: 1px solid #ddd;*/
   background-color: white;
-  /* border-width: 1px will actually create 2 device pixels on retina */
-  /* this nifty trick sets an actual 1px border on hi-res displays */
+
   background-size: 0; }
   @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .bar {
@@ -3930,11 +3769,19 @@ a.subdued {
       background-image: linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%); }
   .bar.bar-stable {
     border-color: #b2b2b2;
-    background-color: #ffc900;
+    background-color: #FFD503;
     background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
     color: #444; }
     .bar.bar-stable .title {
-      color: #444; }
+      color: #000;
+      font-weight: bold;
+      background-image: url("../img/logo.png");
+      background-size: cover;
+      width: 170px;
+      text-align: center;
+      position: absolute;
+      left: 45% !important;
+      }
     .bar.bar-stable.bar-footer {
       background-image: linear-gradient(180deg, #b2b2b2, #b2b2b2 50%, transparent 50%); }
   .bar.bar-positive {
@@ -4004,8 +3851,6 @@ a.subdued {
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
-    left: 0;
     z-index: 0;
     overflow: hidden;
     margin: 0 10px;
@@ -4131,7 +3976,7 @@ a.subdued {
     border-color: transparent;
     background: none;
     box-shadow: none;
-    color: #444;
+    color: #111;
     font-size: 17px; }
   .bar-stable .button.button-icon {
     border-color: transparent;
@@ -4318,11 +4163,6 @@ a.subdued {
 .nav-bar-tabs-top .bar {
   background-image: none; }
 
-/**
- * Tabs
- * --------------------------------------------------
- * A navigation bar with any number of tab items supported.
- */
 .tabs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4368,7 +4208,6 @@ a.subdued {
       background-size: 100% 1px;
       background-repeat: no-repeat; } }
 
-/* Allow parent element of tabs to define color, or just the tab itself */
 .tabs-light > .tabs,
 .tabs.tabs-light {
   border-color: #ddd;
@@ -5035,8 +4874,6 @@ ion-tabs.tabs-color-active-dark .tab-item {
     .tabs-top.tabs-striped.tabs-icon-left .tab-item.tab-item-active .tab-title, .tabs-top.tabs-striped.tabs-icon-left .tab-item.tab-item-active i, .tabs-top.tabs-striped.tabs-icon-left .tab-item.active .tab-title, .tabs-top.tabs-striped.tabs-icon-left .tab-item.active i, .tabs-top.tabs-striped.tabs-icon-left .tab-item.activated .tab-title, .tabs-top.tabs-striped.tabs-icon-left .tab-item.activated i {
       margin-top: -0.1em; }
 
-/* Allow parent element to have tabs-top */
-/* If you change this, change platform.scss as well */
 .tabs-top > .tabs,
 .tabs.tabs-top {
   top: 44px;
@@ -5145,8 +4982,6 @@ ion-tabs.tabs-color-active-dark .tab-item {
   font-size: 12px;
   line-height: 16px; }
 
-/* Navigational tab */
-/* Active state for tab */
 .tab-item.tab-item-active,
 .tab-item.active,
 .tab-item.activated {
@@ -5211,11 +5046,6 @@ ion-tabs.tabs-color-active-dark .tab-item {
 .pane[hide-nav-bar="true"] .has-tabs-top {
   top: 49px; }
 
-/**
- * Menus
- * --------------------------------------------------
- * Side panel structure
- */
 .menu {
   position: absolute;
   top: 0;
@@ -5270,11 +5100,6 @@ ion-tabs.tabs-color-active-dark .tab-item {
   -webkit-transition: -webkit-transform 200ms ease;
   transition: transform 200ms ease; }
 
-/**
- * Modals
- * --------------------------------------------------
- * Modals are independent windows that slide in from off-screen.
- */
 .modal-backdrop,
 .modal-backdrop-bg {
   position: fixed;
@@ -5340,11 +5165,6 @@ ion-tabs.tabs-color-active-dark .tab-item {
   .modal-open.loading-active .modal-backdrop {
     pointer-events: none; }
 
-/**
- * Popovers
- * --------------------------------------------------
- * Popovers are independent views which float over content
- */
 .popover-backdrop {
   position: fixed;
   top: 0;
@@ -5466,10 +5286,6 @@ ion-tabs.tabs-color-active-dark .tab-item {
     width: 360px;
     margin-left: -180px; } }
 
-/**
- * Popups
- * --------------------------------------------------
- */
 .popup-container {
   position: absolute;
   top: 0;
@@ -5594,10 +5410,6 @@ ion-tabs.tabs-color-active-dark .tab-item {
   .popup-open .popup-backdrop, .popup-open .popup {
     pointer-events: auto; }
 
-/**
- * Loading
- * --------------------------------------------------
- */
 .loading-container {
   position: absolute;
   left: 0;
@@ -5643,10 +5455,6 @@ ion-tabs.tabs-color-active-dark .tab-item {
     .loading-container .loading h1, .loading-container .loading h2, .loading-container .loading h3, .loading-container .loading h4, .loading-container .loading h5, .loading-container .loading h6 {
       color: #fff; }
 
-/**
- * Items
- * --------------------------------------------------
- */
 .item {
   border-color: #ddd;
   background-color: #fff;
@@ -5654,10 +5462,10 @@ ion-tabs.tabs-color-active-dark .tab-item {
   position: relative;
   z-index: 2;
   display: block;
-  margin: -1px;
+  /*margin: -7px;*/
   padding: 16px;
   border-width: 1px;
-  border-style: solid;
+  /*border-style: solid;*/
   font-size: 16px; }
   .item h2 {
     margin: 0 0 2px 0;
@@ -5930,15 +5738,6 @@ a.item {
   a.item:hover, a.item:focus {
     text-decoration: none; }
 
-/**
- * Complex Items
- * --------------------------------------------------
- * Adding .item-complex allows the .item to be slidable and
- * have options underneath the button, but also requires an
- * additional .item-content element inside .item.
- * Basically .item-complex removes any default settings which
- * .item added, so that .item-content looks them as just .item.
- */
 .item-complex,
 a.item.item-complex,
 button.item.item-complex {
@@ -6088,10 +5887,6 @@ a.item-content {
       border-color: #000;
       background-color: #262626; }
 
-/**
- * Item Icons
- * --------------------------------------------------
- */
 .item-icon-left .icon,
 .item-icon-right .icon {
   display: -webkit-box;
@@ -6158,11 +5953,6 @@ a.item-content {
 .item-icon-right .icon-accessory {
   right: 3px; }
 
-/**
- * Item Button
- * --------------------------------------------------
- * An item button is a child button inside an .item (not the entire .item)
- */
 .item-button-left {
   padding-left: 72px; }
 
@@ -6523,10 +6313,6 @@ button.item.item-button-right {
 .item-placeholder {
   opacity: 0.7; }
 
-/**
- * The hidden right-side buttons that can be exposed under a list item
- * with dragging.
- */
 .item-options {
   position: absolute;
   top: 0;
@@ -6550,10 +6336,7 @@ button.item.item-button-right {
     .item-options .button:before {
       margin: 0 auto; }
 
-/**
- * Lists
- * --------------------------------------------------
- */
+
 .list {
   position: relative;
   padding-top: 1px;
@@ -6566,10 +6349,6 @@ button.item.item-button-right {
   .list:last-child.card {
     margin-bottom: 40px; }
 
-/**
- * List Header
- * --------------------------------------------------
- */
 .list-header {
   margin-top: 20px;
   padding: 5px 15px;
@@ -6581,11 +6360,6 @@ button.item.item-button-right {
   padding-right: 1px;
   padding-left: 1px; }
 
-/**
- * Cards and Inset Lists
- * --------------------------------------------------
- * A card and list-inset are close to the same thing, except a card as a box shadow.
- */
 .card,
 .list-inset {
   overflow: hidden;
@@ -6653,10 +6427,6 @@ button.item.item-button-right {
 .padding-right > .list .item {
   margin-right: 0; }
 
-/**
- * Badges
- * --------------------------------------------------
- */
 .badge {
   background-color: transparent;
   color: #AAAAAA;
@@ -6723,10 +6493,6 @@ button.item.item-button-right {
   position: relative;
   top: -1px; }
 
-/**
- * Slide Box
- * --------------------------------------------------
- */
 .slider {
   position: relative;
   visibility: hidden;
@@ -6778,20 +6544,6 @@ button.item.item-button-right {
   -webkit-animation: none 0s;
   animation: none 0s; }
 
-/**
- * Swiper 3.2.7
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- *
- * http://www.idangero.us/swiper/
- *
- * Copyright 2015, Vladimir Kharlampidi
- * The iDangero.us
- * http://www.idangero.us/
- *
- * Licensed under MIT
- *
- * Released on: December 7, 2015
- */
 .swiper-container {
   margin: 0 auto;
   position: relative;
@@ -6860,7 +6612,7 @@ button.item.item-button-right {
   height: 100%;
   position: relative; }
 
-/* Auto Height */
+
 .swiper-container-autoheight,
 .swiper-container-autoheight .swiper-slide {
   height: auto; }
@@ -6876,7 +6628,7 @@ button.item.item-button-right {
   -ms-transition-property: -ms-transform;
   transition-property: transform, height; }
 
-/* a11y */
+
 .swiper-container .swiper-notification {
   position: absolute;
   left: 0;
@@ -6885,7 +6637,7 @@ button.item.item-button-right {
   opacity: 0;
   z-index: -1000; }
 
-/* IE10 Windows Phone 8 Fixes */
+
 .swiper-wp8-horizontal {
   -ms-touch-action: pan-y;
   touch-action: pan-y; }
@@ -7094,12 +6846,12 @@ button.swiper-pagination-bullet {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
   /* Firefox 16+, IE10, Opera 12.50+ */ }
 
-/* Coverflow */
+
 .swiper-container-coverflow .swiper-wrapper {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px; }
 
-/* Fade */
+
 .swiper-container-fade.swiper-container-free-mode .swiper-slide {
   -webkit-transition-timing-function: ease-out;
   -moz-transition-timing-function: ease-out;
@@ -7117,7 +6869,7 @@ button.swiper-pagination-bullet {
 .swiper-container-fade .swiper-slide-active .swiper-slide-active {
   pointer-events: auto; }
 
-/* Cube */
+
 .swiper-container-cube {
   overflow: visible; }
 
@@ -7171,7 +6923,7 @@ button.swiper-pagination-bullet {
   filter: blur(50px);
   z-index: 0; }
 
-/* Scrollbar */
+
 .swiper-scrollbar {
   border-radius: 10px;
   position: relative;
@@ -7206,7 +6958,7 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar-cursor-drag {
   cursor: move; }
 
-/* Preloader */
+
 .swiper-lazy-preloader {
   width: 42px;
   height: 42px;
@@ -7383,10 +7135,6 @@ ion-slides {
   100% {
     transform: translate3d(0, 0, 0) rotate(0); } }
 
-/**
- * Spinners
- * --------------------------------------------------
- */
 .spinner {
   stroke: #444;
   fill: #444; }
@@ -7462,12 +7210,11 @@ ion-slides {
 .spinner-spiral.spinner-dark .stop2 {
   stop-color: #444; }
 
-/**
- * Forms
- * --------------------------------------------------
- */
+
 form {
-  margin: 0 0 1.42857; }
+  margin: 0 0 1.42857;
+  display: flex;
+  }
 
 legend {
   display: block;
@@ -7511,7 +7258,9 @@ textarea {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 6px 0 5px 16px; }
+  /*padding: 6px 0 5px 16px;*/
+  padding: 0px;
+  width: 100%; }
   .item-input input {
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -7789,10 +7538,7 @@ input[type="radio"][readonly],
 input[type="checkbox"][readonly] {
   background-color: transparent; }
 
-/**
- * Checkbox
- * --------------------------------------------------
- */
+
 .checkbox {
   position: relative;
   display: inline-block;
@@ -8081,13 +7827,10 @@ input:checked + .checkbox-icon:after {
   cursor: pointer;
   pointer-events: none; }
 
-/* Fix to avoid background color bleeding */
-/* (occured on (at least) Android 4.2, Asus MeMO Pad HD7 ME173X) */
+
 .platform-android4_2 .toggle .track {
   -webkit-background-clip: padding-box; }
 
-/* the handle (circle) thats inside the toggle's track area */
-/* also the handle's appearance when it is "off" */
 .toggle .handle {
   -webkit-transition: 0.3s cubic-bezier(0, 1.1, 1, 1.1);
   transition: 0.3s cubic-bezier(0, 1.1, 1, 1.1);
@@ -8211,21 +7954,17 @@ input:checked + .checkbox-icon:after {
 .toggle-small .toggle-dark input:checked + .track .handle {
   background-color: #444; }
 
-/**
- * Radio Button Inputs
- * --------------------------------------------------
- */
 .item-radio {
   padding: 0; }
   .item-radio:hover {
     cursor: pointer; }
 
 .item-radio .item-content {
-  /* give some room to the right for the checkmark icon */
+
   padding-right: 64px; }
 
 .item-radio .radio-icon {
-  /* checkmark icon will be hidden by default */
+
   position: absolute;
   top: 0;
   right: 0;
@@ -8236,7 +7975,7 @@ input:checked + .checkbox-icon:after {
   font-size: 24px; }
 
 .item-radio input {
-  /* hide any radio button inputs elements (the ugly circles) */
+
   position: absolute;
   left: -9999px; }
   .item-radio input:checked + .radio-content .item-content {
@@ -8246,10 +7985,6 @@ input:checked + .checkbox-icon:after {
     /* show the checkmark icon when its checked */
     visibility: visible; }
 
-/**
- * Range
- * --------------------------------------------------
- */
 .range input {
   display: inline-block;
   overflow: hidden;
@@ -8265,33 +8000,9 @@ input:checked + .checkbox-icon:after {
   background-position: center;
   background-size: 99% 2px;
   background-repeat: no-repeat;
-  -webkit-appearance: none;
-  /*
-   &::-ms-track{
-     background: transparent;
-     border-color: transparent;
-     border-width: 11px 0 16px;
-     color:transparent;
-     margin-top:20px;
-   }
-   &::-ms-thumb {
-     width: $range-slider-width;
-     height: $range-slider-height;
-     border-radius: $range-slider-border-radius;
-     background-color: $toggle-handle-off-bg-color;
-     border-color:$toggle-handle-off-bg-color;
-     box-shadow: $range-slider-box-shadow;
-     margin-left:1px;
-     margin-right:1px;
-     outline:none;
-   }
-   &::-ms-fill-upper {
-     height: $range-track-height;
-     background:$range-default-track-bg;
-   }
-   */ }
+  -webkit-appearance: none; }
+
   .range input::-moz-focus-outer {
-    /* hide the focus outline in Firefox */
     border: 0; }
   .range input::-webkit-slider-thumb {
     position: relative;
@@ -8304,7 +8015,6 @@ input:checked + .checkbox-icon:after {
     -webkit-appearance: none;
     border: 0; }
   .range input::-webkit-slider-thumb:before {
-    /* what creates the colorful line on the left side of the slider */
     position: absolute;
     top: 13px;
     left: -2001px;
@@ -8313,7 +8023,6 @@ input:checked + .checkbox-icon:after {
     background: #444;
     content: ' '; }
   .range input::-webkit-slider-thumb:after {
-    /* create a larger (but hidden) hit area */
     position: absolute;
     top: -15px;
     left: -15px;
@@ -8416,10 +8125,6 @@ input:checked + .checkbox-icon:after {
 .platform-windowsphone .range input {
   height: auto; }
 
-/**
- * Select
- * --------------------------------------------------
- */
 .item-select {
   position: relative; }
   .item-select select {
@@ -8505,19 +8210,11 @@ input:checked + .checkbox-icon:after {
 select[multiple], select[size] {
   height: auto; }
 
-/**
- * Progress
- * --------------------------------------------------
- */
 progress {
   display: block;
   margin: 15px auto;
   width: 100%; }
 
-/**
- * Buttons
- * --------------------------------------------------
- */
 .button {
   border-color: transparent;
   background-color: #f8f8f8;
@@ -8901,10 +8598,6 @@ a.button {
   cursor: default !important;
   pointer-events: none; }
 
-/**
- * Button Bar
- * --------------------------------------------------
- */
 .button-bar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8965,15 +8658,6 @@ a.button {
 .button-bar > .button-small .icon:before {
   line-height: 28px; }
 
-/**
- * Grid
- * --------------------------------------------------
- * Using flexbox for the grid, inspired by Philip Walton:
- * http://philipwalton.github.io/solved-by-flexbox/demos/grids/
- * By default each .col within a .row will evenly take up
- * available width, and the height of each .col with take
- * up the height of the tallest .col in the same .row.
- */
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9010,8 +8694,6 @@ a.button {
   padding: 5px;
   width: 100%; }
 
-/* Vertically Align Columns */
-/* .row-* vertically aligns every .col in the .row */
 .row-top {
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -9047,7 +8729,6 @@ a.button {
   -moz-align-items: baseline;
   align-items: baseline; }
 
-/* .col-* vertically aligns an individual .col */
 .col-top {
   -webkit-align-self: flex-start;
   -moz-align-self: flex-start;
@@ -9094,10 +8775,6 @@ a.button {
 .col-offset-90 {
   margin-left: 90%; }
 
-/* Explicit Column Percent Sizes */
-/* By default each grid column will evenly distribute */
-/* across the grid. However, you can specify individual */
-/* columns to take up a certain size of the available area */
 .col-10 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 10%;
@@ -9197,11 +8874,6 @@ a.button {
   flex: 0 0 90%;
   max-width: 90%; }
 
-/* Responsive Grid Classes */
-/* Adding a class of responsive-X to a row */
-/* will trigger the flex-direction to */
-/* change to column and add some margin */
-/* to any columns in the row for clearity */
 @media (max-width: 567px) {
   .responsive-sm {
     -webkit-box-direction: normal;
@@ -9265,10 +8937,6 @@ a.button {
       max-width: 100%;
       width: 100%; } }
 
-/**
- * Utility Classes
- * --------------------------------------------------
- */
 .hide {
   display: none; }
 
@@ -9358,10 +9026,6 @@ a.button {
   .clearfix:after {
     clear: both; }
 
-/**
- * Content Padding
- * --------------------------------------------------
- */
 .padding {
   padding: 10px; }
 
@@ -9381,10 +9045,6 @@ a.button {
 .padding-horizontal {
   padding-left: 10px; }
 
-/**
- * Scrollable iFrames
- * --------------------------------------------------
- */
 .iframe-wrapper {
   position: fixed;
   -webkit-overflow-scrolling: touch;
@@ -9393,20 +9053,9 @@ a.button {
     height: 100%;
     width: 100%; }
 
-/**
- * Rounded
- * --------------------------------------------------
- */
 .rounded {
   border-radius: 4px; }
 
-/**
- * Utility Colors
- * --------------------------------------------------
- * Utility colors are added to help set a naming convention. You'll
- * notice we purposely do not use words like "red" or "blue", but
- * instead have colors which represent an emotion or generic theme.
- */
 .light, a.light {
   color: #fff; }
 
@@ -9489,7 +9138,6 @@ a.button {
   border-color: #111; }
 
 [collection-repeat] {
-  /* Position is set by transforms */
   left: 0 !important;
   top: 0 !important;
   position: absolute !important;
@@ -9501,8 +9149,8 @@ a.button {
 
 .collection-repeat-after-container {
   z-index: 0;
-  display: block;
-  /* when scrolling horizontally, make sure the after container doesn't take up 100% width */ }
+  display: block;}
+
   .collection-repeat-after-container.horizontal {
     display: inline-block; }
 
@@ -9510,11 +9158,6 @@ a.button {
 .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
   display: none !important; }
 
-/**
- * Platform
- * --------------------------------------------------
- * Platform specific tweaks
- */
 .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
   height: 64px; }
   .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
@@ -9759,10 +9402,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-  overflow-y: scroll;
-  /* force scroll to appear */ }
+  overflow-y: scroll; }
 
-/* helper class when showing content */
 .noscroll {
   overflow: hidden; }
 
@@ -9779,12 +9420,12 @@ a:focus {
 button:focus {
   outline: none; }
 
-/* Main content */
+
 .main {
   position: relative;
   z-index: 50; }
 
-/* Grid container */
+
 .grid {
   position: relative; }
 
@@ -9805,7 +9446,7 @@ button:focus {
 .view-single .grid::after {
   opacity: 1; }
 
-/* Top bar above the grid */
+
 .top-bar {
   background: #fff;
   width: 100%;
@@ -9822,7 +9463,7 @@ button:focus {
   margin: 0;
   font-size: 0.75em; }
 
-/* Grid item */
+
 .grid__item {
   padding: 45px 55px 30px;
   position: relative;
@@ -9841,54 +9482,53 @@ button:focus {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-justify-content: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;}
 
-/* Grid item "border" */
 .grid__item::before {
   position: absolute;
   content: '';
   top: 0px;
   right: 55px;
   bottom: 0px;
-  left: 55px;
-  /*border-bottom: 1px solid rgba(74, 74, 74, 0.075);*/ }
+  left: 55px; }
 
 .grid__item * {
   z-index: 10; }
 
-/* grid item element and full content element styles */
+
 .title {
   margin: 0;
-  font-size: 1.2em;
-  font-family: "Helvetica Neue", serif;
-  color: #6b46e5;
-  text-align: center;
-
-
- }
+  font-size: 1.5em;
+  font-family: "Lato", serif;
+  color: #e42112;
+  font-weight: 700;
+  text-align: center; }
 
 .title--preview {
-  -webkit-flex: 1;
+  /*-webkit-flex: 1;
   flex: 1;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
-  justify-content: center;
+  justify-content: center;*/
   width: 100%;
-  font-weight: 800;
-  line-height: 24px;
-
- }
-
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 20px;
+  -webkit-filter: grayscale(0)
+  filter: grayscale(0);
+  background-color: #111;
+  }
 
 .loader {
   height: 1px;
   width: 100%;
   margin: 1em auto;
   position: relative;
-  background: rgba(0, 0, 0, 0.1); }
+  background: rgba(0, 0, 0, 0.24); }
 
 .loader::before {
   content: '';
@@ -9929,7 +9569,6 @@ button:focus {
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
 
-/* closing (delays) */
 .title--preview {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s; }
@@ -9942,7 +9581,6 @@ button:focus {
   -webkit-transition-delay: 0s;
   transition-delay: 0s; }
 
-/* opening */
 .grid__item--animate .title--preview {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -9993,29 +9631,38 @@ button:focus {
   filter: none; }
 
 a.grid__item {
-    -webkit-filter: grayscale(100%);
-  	filter: grayscale(100%);
   	-webkit-transition: .3s ease-in-out;
   	transition: .3s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 
-
+a.grid__item:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  background-color: none;
 }
 
 
-a.grid__item:hover {
+span.title.title--preview.ng-binding {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  color: white;
+  background-color: none;
 
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-  
 }
 
 .meta__date,
 .meta__reading-time {
   display: block;
   float: right;
-  color: #6b46e5;
-  font-weight: 500;
-  font-size: 1.6em;}
+  color: white;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-size: 1em;
+  background-color: #111;
+
+}
 
 .meta__reading-time {
   text-align: right;
@@ -10073,7 +9720,6 @@ a.grid__item:hover {
   transform: scale3d(0.5, 0.5, 1);
   opacity: 0; }
 
-/* Grid footer */
 .page-meta {
   width: 100%;
   background: #fff;
@@ -10084,7 +9730,6 @@ a.grid__item:hover {
   font-weight: bold;
   cursor: default; }
 
-/* Placeholder element (dummy that gets animated when we click on an item) */
 .placeholder {
   pointer-events: none;
   position: absolute;
@@ -10093,7 +9738,7 @@ a.grid__item:hover {
   z-index: 100;
   top: 0;
   left: 0;
-  background: #fff;
+  background: #e1e1e1;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0; }
 
@@ -10107,7 +9752,6 @@ a.grid__item:hover {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s; }
 
-/* main content */
 .content {
   position: absolute;
   top: 0;
@@ -10115,7 +9759,6 @@ a.grid__item:hover {
   width: 100%;
   pointer-events: none;
   height: 0;
-  /* Avoid second scroll bar in Chrome! */
   visibility: hidden;
   z-index: 400;
   overflow: hidden; }
@@ -10125,7 +9768,6 @@ a.grid__item:hover {
   pointer-events: auto;
   visibility: visible; }
 
-/* scroll helper wrap */
 .scroll-wrap {
   position: absolute;
   width: 100%;
@@ -10136,7 +9778,6 @@ a.grid__item:hover {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
 
-/* single content item */
 .content__item {
   position: absolute;
   top: 0;
@@ -10163,7 +9804,6 @@ a.grid__item:hover {
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s; }
 
-/* content elements */
 .category--full {
   font-size: 1.25em;
   margin-bottom: 20px;
@@ -10257,13 +9897,6 @@ a.grid__item:hover {
   -webkit-transition: opacity 0.5s 0.25s;
   transition: opacity 0.5s 0.25s; }
 
-/* Viewport sizes based on column number */
-/* 1 column */
-/* 2 columns */
-/* 3 columns */
-/* 4 columns */
-/* 5 columns */
-/* 6 columns */
 @media screen and (min-width: 300px) {
   html,
   body,
@@ -10287,14 +9920,9 @@ a.grid__item:hover {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
 
-
-  /* 2 columns */
   .grid__item {
     width: 50%;
     border: none;
-
-
-
   }
   .grid__item::before {
     top: 5px;
@@ -10304,14 +9932,10 @@ a.grid__item:hover {
     /*border: 1px solid rgba(74, 74, 74, 0.075);
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;*/
-
-
      }
   .grid__item:hover::before,
   .grid__item:focus::before {
   /*border: 3px solid rgba(255, 83, 13, 0.5); */
-
-
 
   }
   .grid__item--loading.grid__item::before {
@@ -10337,7 +9961,6 @@ a.grid__item:hover {
   .grid__item {
     width: 16.66%; } }
 
-/* small screen changes for sidebar (it becomes an off-canvas menu) */
 @media screen and (max-width: 299px) {
   .title--full {
     font-size: 2em; }

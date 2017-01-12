@@ -1,21 +1,12 @@
-<ion-view view-title="Article">
+<ion-view view-title>
   <ion-content article-load>
-
     <article class="content__item">
       <span class="category category--full"></span>
-      <h2 class="title title--full">{{oneComic.title}}</h2>
-      <div class="meta meta--full">
-        <img class="meta__avatar" ng-src="{{oneComic.images[0].path+'.'+oneComic.images[0].extension}}" alt="Image" />
-        <!--<span class="meta__author">Sohia Bancy</span>-->
-        <!--<span class="meta__date"><i class="fa fa-calendar-o"></i> 22 Sep</span>
-        <span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>-->
-        <!--<span class="meta__misc meta__misc--seperator"><i class="fa fa-comments-o"></i> 7 commentarios</span>
-        <span class="meta__misc"><i class="fa fa-heart"></i> 12 favoritos</span>-->
-      </div>
-      <p>{{oneComic.description}}</p>
-
-
+        <h2 class="title title--full">{{oneComic.title}}</h2>
+        <div class="meta meta--full">
+          <img class="meta__avatar" ng-src="{{oneComic.images[0].path+'.'+oneComic.images[0].extension}}" alt="Image" />
+        </div>
+          <p>{{oneComic.description}}</p>
     </article>
-
   </ion-content>
 </ion-view>

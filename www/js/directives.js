@@ -27,10 +27,6 @@ angular.module('comicsMarvel.directives', [])
 					}
 				};
 
-			/**
-			* gets the viewport width and height
-			* based on http://responsejs.com/labs/dimensions/
-			*/
 			$scope.getViewport = function (axis){
 				var client, inner;
 
