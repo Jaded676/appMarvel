@@ -3775,7 +3775,7 @@ a.subdued {
     .bar.bar-stable .title {
       color: #000;
       font-weight: bold;
-      background-image: url("/img/logo.png");
+      background-image: url("../img/logo.png");
       background-size: cover;
       width: 170px;
       text-align: center;
