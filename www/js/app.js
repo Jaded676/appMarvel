@@ -24,12 +24,12 @@ angular.module('comicsMarvel', ['ionic', 'ui.router', 'comicsMarvel.controllers'
     controller: 'AppCtrl'
   })
 
-  .state('app.playlists', {
-    url: '/playlists',
+  .state('app.comics', {
+    url: '/comics',
     views: {
       'menuContent': {
         templateUrl: 'templates/grid.html',
-        controller: 'PlaylistsCtrl'
+        controller: 'ComicsCtrl'
       }
     }
   })
@@ -44,7 +44,7 @@ angular.module('comicsMarvel', ['ionic', 'ui.router', 'comicsMarvel.controllers'
     }
   });
 
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/comics');
 
   $ionicConfigProvider.views.transition('none');
 });

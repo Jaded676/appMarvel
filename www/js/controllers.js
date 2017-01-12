@@ -13,7 +13,7 @@ angular.module('comicsMarvel.controllers', ['ui.bootstrap'])
      $scope.mySelection = 'Año';
 
      $scope.isOnPlaylist = function () {
-       if($state.current.name == "app.playlists"){
+       if($state.current.name == "app.comics"){
          return true;
        }
        else return false;
@@ -50,7 +50,7 @@ angular.module('comicsMarvel.controllers', ['ui.bootstrap'])
 
    }])
 
-.controller('PlaylistsCtrl', ['$rootScope','$scope', 'ArticlesService','md5','$http','$state',
+.controller('ComicsCtrl', ['$rootScope','$scope', 'ArticlesService','md5','$http','$state',
  function($rootScope, $scope, ArticlesService, md5, $http, $state) {
    $scope.cargando = true;
    //$scope.getArticleList = function() {

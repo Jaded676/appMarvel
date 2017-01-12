@@ -103,7 +103,7 @@ angular.module('comicsMarvel.directives', [])
         	var gridViewContainer = document.getElementById('grid-template');
 
         	$rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState) {
-				if (toState.name === 'app.playlists' && fromState.name === 'app.article') {
+				if (toState.name === 'app.comics' && fromState.name === 'app.article') {
 				scope.animationFlag = false;
 					hideContent();
 				}
